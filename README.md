@@ -1,5 +1,3 @@
-http://peaceful-dawn-6754.herokuapp.com/api/
-
 #Rewards API
 This is a REST service built to keep track of of users and their loyalty transactions.
 
@@ -244,7 +242,7 @@ Returns a list of all transactions for a user.
 ### 7. Updates a specific user
 Deletes a user
 
-	DELETE /users/{ID}
+	PUT /users/{ID}
 	
 	
 - Where **{ID}** is a user id.
