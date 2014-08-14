@@ -13,8 +13,10 @@ var MongoConnector = function(dbConfig) {
 
 MongoConnector.prototype.connect = function() {
 	var connectionString = this.baseConnectionString + this.dbConfig.dbName;
-    Mongoose.connect(connectionString);
-   	Logger.debug("Connected to DB with connection string: " + connectionString);
+    Mongoose.connect(connectionString, function(err, next) {
+    	if (err){ Logger.error("Mongo connector error with connection string " + connectionString + " : " + err) }
+    	else{ Logger.debug("Connected to DB with connection string: " + connectionString); }
+    });
 }
 
 module.exports = MongoConnector;
