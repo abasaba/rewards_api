@@ -9,6 +9,10 @@ var logsConfig = config.get('app.logs');
 
 var logger = new winston.Logger({
     transports: [
+        new(winston.transports.Console)({
+            level: logsConfig.level,
+            colorize: true
+        }),
         new winston.transports.File({
             level: logsConfig.level,
             filename: logsConfig.location + 'app.log',
