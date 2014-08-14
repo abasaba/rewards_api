@@ -1,0 +1,9 @@
+{
+  "db": {
+    "host" : "kahana.mongohq.com",
+    "port" : 10075,
+    "dbName" : "app28464789",
+    "user" : "appUser",
+    "pass" : "r#@lMadrid"
+  }
+}

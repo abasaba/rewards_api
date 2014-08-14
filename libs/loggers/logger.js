@@ -5,6 +5,8 @@ winston.emitErrs = true;
 /**
  * This class is a wrapper around winston logger which pulls in configurations from our config file
  */
+var logsConfig = config.get('app.logs');
+
 var logger = new winston.Logger({
     transports: [
         new winston.transports.File({
@@ -19,7 +21,6 @@ var logger = new winston.Logger({
     exitOnError: false
 });
 
-var logsConfig = config.get('app.logs');
 
 module.exports = logger;
 module.exports.stream = {

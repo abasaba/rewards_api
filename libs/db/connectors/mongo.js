@@ -6,7 +6,9 @@ var Mongoose = require('mongoose');
  */
 var MongoConnector = function(dbConfig) {
 	this.dbConfig = dbConfig;
-	this.baseConnectionString = 'mongodb://' + dbConfig.host + ':' + dbConfig.port + '/'
+	var credString;
+	if (dbConfig.user != null) { credString = dbConfig.user + ":"+ dbConfig.pass + "@"; }
+	this.baseConnectionString = 'mongodb://' + credString + dbConfig.host + ':' + dbConfig.port + '/'
 }
 
 MongoConnector.prototype.connect = function() {
