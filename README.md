@@ -11,7 +11,7 @@ This is a REST service built to keep track of of users and their loyalty transac
 1. Clone this repo
 2. Update the config/{env}.json file (keep in mind that config values will fall back to default.json when not found in other files)
 3. 		export NODE_ENV={env}
-where {env} is the name of the config file you want to use (ex. dev.json)
+where {env} is the name of the config file you want to use (ex. dev for dev.json)
 3. 		npm install
 4. 		npm start
 
