@@ -24,6 +24,12 @@ where {env} is the name of the config file you want to use (ex. dev.json)
 
 
 ## REST API
+The rest API is currently hosted at the following url:
+
+	http://peaceful-dawn-6754.herokuapp.com/api/
+
+The following lists all the actions allowed.  Prepend the above url to any of the actions below.
+
 
 ### 1. Create user
 
