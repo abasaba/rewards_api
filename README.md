@@ -20,6 +20,8 @@ where {env} is the name of the config file you want to use (ex. dev for dev.json
 * There is no authentication for any of the API requests (anyone can query the API)
 * Although there are a few frameworks being used, with more time, each would have to be tested thoroughly for performance issues. Writing a few from scratch might also be the right way to go
 * There is limited logging/error catching due to timeing constraints.
+* Versioning isn't supported yet
+* Code comments could use some more work
 
 
 
